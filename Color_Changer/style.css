@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.flex-container {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.container {
+    width: 80%;
+    height: 80%;
+    background-color: blueviolet;
+}
+
+.flex-container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:link,
+.btn:visited {
+    color: white;
+    font-size: 2.5rem;
+    padding: 2rem 7rem;
+    background-color: rgb(118, 174, 248);
+    border-radius: 30rem;
+    text-decoration: none;
+}
+.btn:hover {
+    background-color: #fff;
+    border: 2px solid rgb(118, 174, 248);
+    color: rgb(118, 174, 248);
+}

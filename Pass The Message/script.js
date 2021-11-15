@@ -8,14 +8,18 @@ const userMessage = document.querySelector('.user_text');
 wrongMessage.classList.add('hidden');
 console.log(userMessage.textContent);
 
-function update_text() {
+
+button.addEventListener('click', function (e) {
     console.log(textByUser.value);
     let msg = textByUser.value;
     if (msg.length > 0) {
+        wrongMessage.classList.add('hidden');
         userMessage.textContent = textByUser.value;
+        textByUser.value = '';
     } else {
         wrongMessage.classList.remove('hidden');
+        setTimeout(function () {
+            wrongMessage.classList.add('hidden');
+        }, 1500)
     }
-}
-
-button.addEventListener('click', update_text);
+});
